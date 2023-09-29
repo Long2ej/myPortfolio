@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
 :root {
@@ -56,7 +57,7 @@
 
 
 
-@media screen and (max-width:876px) {
+@media screen and (max-width:700px) {
   .show-menu-btn {
     display: block;
   }
@@ -84,10 +85,51 @@
   .menu.open {
     right: 0;
   }
+
+  .homebox {
+    flex-wrap: wrap;
+  }
+
+  .profilepic {
+    width: 100% !important;
+    height: 50vh !important;
+  }
+
+  .Welcometxt {
+    font-size: 1.25em !important;
+  }
+
+  .txtbox {
+    font-size: 1em !important;
+  }
 }
 
-h1 {
-  padding-top: 20%;
-  text-align: center;
-  color: black;
+.homebox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px black;
+  margin: 2.5% 2.5% 2.5% 2.5%;
+
+}
+
+.profilepic {
+  width: 100%;
+  height: 75vh;
+  border: solid 2px var(--alt-color);
+  border-radius: 50%;
+}
+
+.Messagebox {
+  margin-left: 2.5%;
+}
+
+.Welcometxt {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.txtbox {
+  padding-top: 2.5%;
+  font-size: 1.5em;
 }
