@@ -91,8 +91,9 @@
   }
 
   .profilepic {
-    width: 100% !important;
-    height: 50vh !important;
+    max-width: 80vw !important;
+    min-width: 60vw !important;
+    max-height: 45vh !important;
   }
 
   .Welcometxt {
@@ -100,7 +101,8 @@
   }
 
   .txtbox {
-    font-size: 1em !important;
+    font-size: 1.2em !important;
+    font-family: 'Courgette', cursive;
   }
 }
 
@@ -108,14 +110,13 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: solid 2px black;
   margin: 2.5% 2.5% 2.5% 2.5%;
 
 }
 
 .profilepic {
   width: 100%;
-  height: 75vh;
+  height: 60vh;
   border: solid 2px var(--alt-color);
   border-radius: 50%;
 }
@@ -132,4 +133,49 @@
 .txtbox {
   padding-top: 2.5%;
   font-size: 1.5em;
+  font-family: 'Courgette', cursive;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.hidden {
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  filter: blur(5px);
+  transition: all 2s;
+}
+
+
+span {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.fade {
+  opacity: 1;
+  font-family: 'Rowdies', cursive;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5% 2.5% 2.5% 2.5%;
+}
+
+.socials:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.projectsbox {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
