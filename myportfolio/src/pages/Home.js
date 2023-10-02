@@ -39,41 +39,40 @@ export default function Home() {
 
     return (
         <>
-            <div className="homebox">
-
-                <div className="picbox">
-                    <img src={Profilepic} className="profilepic" alt="Profile"></img>
-                </div>
+            <section className="homebox">
 
 
-                <div className="Messagebox">
+                <div className="herobox">
+
+
 
                     <div className="Welcometxt">
-                        <h1>Welcome,</h1>
+                        <h1>Evan Long</h1>
                     </div>
 
-                    <div className="txtbox">
-                        <p> Currently a senior at James Madison University, I'm pursuing a major in Healthcare Administration complemented by a minor in General Business. My academic foundation has given me a thorough understanding of healthcare systems,
-                            but my true passion lies in the realms of entrepreneurship, startups, and technology. In addition to my formal education, I've dedicated time to teach myself coding, seeking ways to integrate this skill with healthcare innovation.
-                            I'm actively looking for opportunities to blend my healthcare background with the dynamic world of tech and startups.
-                            I welcome connections with professionals who share a similar vision.
-                        </p>
+
+                    <div className='HSAbox'>
+                        <p className='hsatxt'>B.S. Healthservices Administration</p>
                     </div>
+
+
+                    <div className='skillsbox'>
+                        <p className='skillstxt'>HTML--CSS--JavaScript--React--GIT--GitHub</p>
+                    </div>
+
+
+
 
                 </div>
 
+            </section>
 
-            </div>
-
-
-            <section className="skills-section">
-                <div className="skills-container">
-                    Filler text
-                </div>
+            <section className="aboutbox">
 
 
 
             </section>
+
 
 
 
