@@ -2,18 +2,36 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Rowdies', cursive;
+}
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sec-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--alt2-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pri-color);
 }
 
 :root {
   --pri-color: black;
   --sec-color: white;
-  --alt-color: blue;
+  --alt-color: rgb(45, 45, 110);
+  --alt2-color: rgb(224, 221, 221);
 }
 
 .header {
-  height: 13.5vh;
-  background-color: var(--pri-color);
+  height: 12vh;
+  background-color: var(--alt-color);
   color: var(--sec-color);
   padding: 0 20px 0 20px;
   display: flex;
@@ -32,30 +50,88 @@
   text-decoration: none;
   padding: 0 50px;
   transition: 0.4s;
+  text-shadow: 2px 2px var(--pri-color);
+  font-size: larger;
 }
 
 .menu a:hover {
-  color: var(--alt-color);
+  color: var(--alt2-color);
+  text-shadow: .5px .5px var(--sec-color);
+
 }
 
 .show-menu-btn {
   cursor: pointer;
   transition: all 0.4s;
-  font-size: 24px;
-  /* Adjust size */
-  color: var(--sec-color);
-  /* Adjust color */
+  font-size: 18px;
+  color: var(--pri-color);
   float: right;
   position: relative;
   display: none;
   padding: 10px;
-  /* Adds spacing around the icon */
-  /* Makes the clickable area around the icon circular */
-  background-color: var(--pri-color);
-  /* A subtle background */
+  margin: 0 15% 0 15%;
+  background-color: var(--alt2-color);
+  border-radius: 25%;
+  border: solid 2px var(--alt2-color);
 }
 
+.linkedin-icon {
+  color: var(--pri-color);
+}
 
+.github-icon {
+  color: var(--pri-color);
+  border-radius: 10px;
+}
+
+/* ... Your global styles ... */
+
+.homebox {
+  display: flex;
+  justify-content: center;
+  margin: 2.5% 2.5% 2.5% 2.5%;
+  height: 75vh;
+}
+
+.picbox {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profilepic {
+  max-width: 100%;
+  max-height: 75vh;
+  border: solid 6px var(--alt2-color);
+  border-radius: 15px;
+}
+
+.Messagebox {
+  flex: 1;
+  margin-left: 2.5%;
+  max-height: 70vh;
+}
+
+.Welcometxt {
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 3px 3px var(--alt2-color);
+  color: var(--pri-color);
+}
+
+.txtbox {
+  padding: 5% 5% 5% 5%;
+  font-size: 1.625em;
+  font-family: 'Courgette', cursive;
+  background-color: var(--alt2-color);
+  border-radius: 10px;
+  text-shadow: 2px 2px var(--sec-color);
+  max-height: 59vh;
+  overflow-y: scroll;
+  margin-bottom: 5%;
+  margin-right: 2.5%;
+}
 
 @media screen and (max-width:700px) {
   .show-menu-btn {
@@ -87,54 +163,76 @@
   }
 
   .homebox {
-    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
   }
 
   .profilepic {
-    max-width: 80vw !important;
-    min-width: 60vw !important;
-    max-height: 45vh !important;
+    max-width: 95vw;
+    max-height: 50vh;
   }
 
-  .Welcometxt {
-    font-size: 1.25em !important;
+  .picbox,
+  .Messagebox {
+    width: 100%;
+  }
+
+  .Messagebox {
+    margin-left: 0;
   }
 
   .txtbox {
-    font-size: 1.2em !important;
-    font-family: 'Courgette', cursive;
+    font-size: 1.1em;
+    padding: 2% 2% 2% 2%;
+    max-height: 50vh;
+  }
+
+  .Welcometxt {
+    font-size: 1.25em;
   }
 }
 
-.homebox {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2.5% 2.5% 2.5% 2.5%;
 
-}
-
-.profilepic {
-  width: 100%;
-  height: 60vh;
-  border: solid 2px var(--alt-color);
-  border-radius: 50%;
-}
-
-.Messagebox {
-  margin-left: 2.5%;
-}
 
 .Welcometxt {
   font-size: 2em;
   font-weight: bold;
+  text-shadow: 3px 3px var(--alt2-color);
+  color: var(--pri-color);
+
 }
 
 .txtbox {
-  padding-top: 2.5%;
-  font-size: 1.5em;
+  padding: 5% 5% 5% 5%;
+  font-size: 1.625em;
   font-family: 'Courgette', cursive;
+  background-color: var(--alt2-color);
+  border-radius: 10px;
+  text-shadow: 2px 2px var(--sec-color);
+  max-height: 61vh;
+  overflow-y: scroll;
+  margin-bottom: 5%;
+  margin-right: 2.5%;
+
 }
+
+.txtbox::-webkit-scrollbar-track {
+  background: var(--alt2-color);
+}
+
+.txtbox::-webkit-scrollbar-thumb {
+  background: var(--alt-color);
+}
+
+.txtbox::-webkit-scrollbar-thumb:hover {
+  background: var(--alt-color);
+}
+
+.txtbox::-webkit-scrollbar {
+  width: 5px;
+}
+
+
 
 .show {
   opacity: 1;
@@ -178,4 +276,23 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.skills-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--alt2-color);
+  height: 90vh;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 25px;
 }
