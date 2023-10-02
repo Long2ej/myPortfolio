@@ -125,15 +125,12 @@
   border-radius: 10px;
 }
 
-/* ... Your global styles ... */
-
 .homebox {
   height: 88vh;
   width: 100%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: solid 2px var(--alt-color);
 
 }
 
@@ -144,6 +141,8 @@
   border-radius: 15px;
   padding: 8% 12% 0% 12%;
   margin: 0 2% 0 2%;
+  max-height: 75vh;
+  margin-top: -5%;
 }
 
 .Welcometxt {
@@ -200,7 +199,7 @@ span {
   font-family: 'Courier New', Courier, monospace;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
   .Welcometxt {
     font-size: 2.6rem !important;
   }
@@ -211,7 +210,153 @@ span {
   }
 }
 
-.aboutbox {
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 2%;
+}
+
+.arrows path {
+  stroke: var(--alt-color);
+  fill: transparent;
+  stroke-width: 2px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+  {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 和 Chrome */
+}
+
+.hidden {
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  filter: blur(5px);
+  transition: all 2s;
+}
+
+.hidden1 {
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all .5s;
+}
+
+.hidden2 {
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  filter: blur(2px);
+  transition: all 3.5s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.aboutsectionparent {
+  display: inline-block;
+  width: 100%;
+}
+
+.aboutsection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background-color: var(--alt2-color);
+}
+
+@media screen and (max-width:800px) {
+  .aboutbox {
+    flex-wrap: wrap;
+  }
+}
+
+.aboutbox {
+  display: inline-block;
+  text-align: center;
+  border: 2px solid var(--alt-color);
+  border-radius: 15px;
+  height: 60vh;
+  width: 100%;
+  margin: 0% 5% 0% 5%;
+  background-color: var(--sec-color);
+}
+
+.profilepic {
+  border-radius: 50%;
+  width: 10vw;
+  height: 25vh;
+  margin: 5% 0% 5% 0%;
+  float: left;
+}
+
+.aboutme {
+  font-size: large;
+  font-family: 'Rowdies', cursive;
+  color: var(--alt-color);
+  float: left;
 }
