@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Rowdies', cursive;
 }
 
 ::-webkit-scrollbar {
@@ -14,7 +13,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--alt2-color);
+  background: var(--alt-color);
   border-radius: 10px;
 }
 
@@ -75,64 +74,6 @@
   border: solid 2px var(--alt2-color);
 }
 
-.linkedin-icon {
-  color: var(--pri-color);
-}
-
-.github-icon {
-  color: var(--pri-color);
-  border-radius: 10px;
-}
-
-/* ... Your global styles ... */
-
-.homebox {
-  display: flex;
-  justify-content: center;
-  margin: 2.5% 2.5% 2.5% 2.5%;
-  height: 75vh;
-}
-
-.picbox {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.profilepic {
-  max-width: 100%;
-  max-height: 75vh;
-  border: solid 6px var(--alt2-color);
-  border-radius: 15px;
-}
-
-.Messagebox {
-  flex: 1;
-  margin-left: 2.5%;
-  max-height: 70vh;
-}
-
-.Welcometxt {
-  font-size: 2em;
-  font-weight: bold;
-  text-shadow: 3px 3px var(--alt2-color);
-  color: var(--pri-color);
-}
-
-.txtbox {
-  padding: 5% 5% 5% 5%;
-  font-size: 1.625em;
-  font-family: 'Courgette', cursive;
-  background-color: var(--alt2-color);
-  border-radius: 10px;
-  text-shadow: 2px 2px var(--sec-color);
-  max-height: 59vh;
-  overflow-y: scroll;
-  margin-bottom: 5%;
-  margin-right: 2.5%;
-}
-
 @media screen and (max-width:700px) {
   .show-menu-btn {
     display: block;
@@ -161,102 +102,6 @@
   .menu.open {
     right: 0;
   }
-
-  .homebox {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .profilepic {
-    max-width: 95vw;
-    max-height: 50vh;
-  }
-
-  .picbox,
-  .Messagebox {
-    width: 100%;
-  }
-
-  .Messagebox {
-    margin-left: 0;
-  }
-
-  .txtbox {
-    font-size: 1.1em;
-    padding: 2% 2% 2% 2%;
-    max-height: 50vh;
-  }
-
-  .Welcometxt {
-    font-size: 1.25em;
-  }
-}
-
-
-
-.Welcometxt {
-  font-size: 2em;
-  font-weight: bold;
-  text-shadow: 3px 3px var(--alt2-color);
-  color: var(--pri-color);
-
-}
-
-.txtbox {
-  padding: 5% 5% 5% 5%;
-  font-size: 1.625em;
-  font-family: 'Courgette', cursive;
-  background-color: var(--alt2-color);
-  border-radius: 10px;
-  text-shadow: 2px 2px var(--sec-color);
-  max-height: 61vh;
-  overflow-y: scroll;
-  margin-bottom: 5%;
-  margin-right: 2.5%;
-
-}
-
-.txtbox::-webkit-scrollbar-track {
-  background: var(--alt2-color);
-}
-
-.txtbox::-webkit-scrollbar-thumb {
-  background: var(--alt-color);
-}
-
-.txtbox::-webkit-scrollbar-thumb:hover {
-  background: var(--alt-color);
-}
-
-.txtbox::-webkit-scrollbar {
-  width: 5px;
-}
-
-
-
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
-
-.hidden {
-  opacity: 0;
-  width: 100%;
-  height: auto;
-  filter: blur(5px);
-  transition: all 2s;
-}
-
-
-span {
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-.fade {
-  opacity: 1;
-  font-family: 'Rowdies', cursive;
 }
 
 .socials {
@@ -271,28 +116,102 @@ span {
   transition: all 0.5s;
 }
 
-.projectsbox {
-  height: 85vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.linkedin-icon {
+  color: var(--pri-color);
 }
 
-.skills-section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.github-icon {
+  color: var(--pri-color);
+  border-radius: 10px;
 }
 
-.skills-container {
-  display: flex;
+/* ... Your global styles ... */
+
+.homebox {
+  height: 88vh;
+  width: 100%;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  border: solid 2px var(--alt-color);
+
+}
+
+.herobox {
+  display: inline-block;
+  border: 2px solid var(--alt-color);
   background-color: var(--alt2-color);
-  height: 90vh;
-  width: 95%;
-  margin: 0 auto;
-  border-radius: 25px;
+  border-radius: 15px;
+  padding: 8% 12% 0% 12%;
+  margin: 0 2% 0 2%;
+}
+
+.Welcometxt {
+  font-size: 5rem;
+  font-family: 'Rowdies', cursive;
+  color: var(--alt-color);
+  text-shadow: 2px 2px var(--pri-color);
+  text-align: center;
+}
+
+span {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.fade {
+  opacity: 1;
+  font-family: 'Rowdies', cursive;
+}
+
+.projectsbox {
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rowdies', cursive;
+  color: var(--pri-color);
+  text-shadow: 2px 2px var(--alt-color);
+}
+
+.hsatxt {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: 'Courgette', cursive;
+  font-family: 'Dancing Script', cursive;
+  color: var(--alt-color);
+}
+
+.HSAbox {
+  text-align: center;
+  font-size: 1rem;
+
+}
+
+.skillsbox {
+  text-align: center;
+  margin-top: 25%;
+}
+
+.skillstxt {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width:700px) {
+  .Welcometxt {
+    font-size: 2.6rem !important;
+  }
+
+  .herobox {
+    padding: 8% 1% 0% 1%;
+    margin: 1% 1% 1% 1%;
+  }
+}
+
+.aboutbox {
+  height: 100vh;
+  background-color: var(--alt2-color);
 }
