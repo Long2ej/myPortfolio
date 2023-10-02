@@ -17,7 +17,7 @@ export default function Home() {
         }
 
         let char = 0;
-        const timer = setInterval(onTick, 50);
+        const timer = setInterval(onTick, 60);
 
         function onTick() {
             const span = text.querySelectorAll('span')[char];
@@ -40,11 +40,18 @@ export default function Home() {
     return (
         <>
             <div className="homebox">
-                <img src={Profilepic} className='profilepic' alt="Profile"></img>
+
+                <div className="picbox">
+                    <img src={Profilepic} className="profilepic" alt="Profile"></img>
+                </div>
+
+
                 <div className="Messagebox">
+
                     <div className="Welcometxt">
                         <h1>Welcome,</h1>
                     </div>
+
                     <div className="txtbox">
                         <p> Currently a senior at James Madison University, I'm pursuing a major in Healthcare Administration complemented by a minor in General Business. My academic foundation has given me a thorough understanding of healthcare systems,
                             but my true passion lies in the realms of entrepreneurship, startups, and technology. In addition to my formal education, I've dedicated time to teach myself coding, seeking ways to integrate this skill with healthcare innovation.
@@ -52,14 +59,24 @@ export default function Home() {
                             I welcome connections with professionals who share a similar vision.
                         </p>
                     </div>
+
                 </div>
+
+
             </div>
 
-            <div className='socials'>
-                <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/" target="_blank" rel="noreferrer">
-                    <i className="fab fa-linkedin fa-5x"></i>
-                </a>
-            </div>
+
+            <section className="skills-section">
+                <div className="skills-container">
+                    Filler text
+                </div>
+
+
+
+            </section>
+
+
+
         </>
     )
 }
