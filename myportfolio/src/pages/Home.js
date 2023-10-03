@@ -127,7 +127,7 @@ export default function Home() {
                     <div className="Welcometxt">
                         <h1>Evan Long</h1>
                     </div>
-                    <div className='HSAbox hidden'>
+                    <div className='HSAbox'>
                         <p className='hsatxt'>B.S. Healthservices Administration</p>
                     </div>
                     <div className='skillsbox'>
