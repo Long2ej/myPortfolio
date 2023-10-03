@@ -1,4 +1,5 @@
 import Profilepic from '../pages/Images/Profilepic.jpg';
+import Eckenrode from '../pages/Images/Eckenrode.png';
 import React, { useEffect } from 'react';
 
 export default function Home() {
@@ -41,7 +42,7 @@ export default function Home() {
             scrolledOnce = true;
             stickyScroll = true;
 
-            let scrollToPosition = window.innerHeight * 1.08 + window.scrollY;
+            let scrollToPosition = window.innerHeight * 1.00 + window.scrollY;
             window.scrollTo({
                 top: scrollToPosition,
                 behavior: 'smooth'
@@ -86,7 +87,7 @@ export default function Home() {
 
         const text = document.querySelector('h1');
 
-        if (!text) return; // Exit if h1 isn't found
+        if (!text) return;
 
         const strText = text.textContent;
         const splitText = strText.split("");
@@ -112,10 +113,9 @@ export default function Home() {
             clearInterval(timer);
         }
 
-        // Cleanup for the effect in case the component unmounts while the animation is still ongoing
         return () => clearInterval(timer);
 
-    }, []);  // Empty dependency array ensures this runs once after component is mounted
+    }, []);
 
     return (
         <>
@@ -144,22 +144,34 @@ export default function Home() {
 
             </section>
 
-            <section className="aboutsectionparent">
+            <section className="about-section-parent">
+                <div className="about-section">
+                    <h1 className="about-me-title hidden1">About Me</h1>
+                    <div className="about-box hidden">
+                        <img className="profile-pic" src={Profilepic} alt="Profile" />
+                        <p>
+                            Currently a senior at James Madison University, I'm pursuing a major in Healthcare Administration complemented by a minor in General Business.
+                            My academic foundation has given me a thorough understanding of healthcare systems, but my true passion lies in the realms of entrepreneurship, startups, and technology.
+                            In addition to my formal education, I've dedicated time to teach myself coding, seeking ways to integrate this skill with healthcare innovation.
+                            I'm actively looking for opportunities to blend my healthcare background with the dynamic world of tech and startups.
+                            I welcome connections with professionals who share a similar vision.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-                <div className="aboutsection">
-
-
-                    <h1 className='Aboutme'>About Me</h1>
-
-                    <div className="aboutbox">
-                        <img className="profilepic" src={Profilepic} alt="Profilepic" />
-                        <p>Filler Text</p>
-
+            <section className="projects-section-parent">
+                <div className="projects-section">
+                    <div className="project-card">
+                        <img src={Eckenrode} alt="Project 1" className="project-image" />
+                        <h2>Team Eckenrode</h2>
+                        <p>Team Eckenrode was one of my first ever projects. Used HTML, CSS, and some vanella JavaScript to design and deploy their website.</p>
+                        <a href="https://teameckenrode.com/" target="_blank" rel="noopener noreferrer" className="project-link">View Project</a>
                     </div>
 
+                    {/* Add more project cards as needed */}
+                    {/* <div className="project-card"> ... </div> */}
                 </div>
-
-
             </section>
 
 
