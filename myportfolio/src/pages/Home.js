@@ -1,5 +1,6 @@
 import Profilepic from '../pages/Images/Profilepic.jpg';
-import Eckenrode from '../pages/Images/Eckenrode.png';
+import EckenrodeViritical from '../pages/Images/EckenrodeVirtical.png';
+import EckenrodeHorizontal from '../pages/Images/EckenrodeHorizontal.png';
 import React, { useEffect } from 'react';
 
 export default function Home() {
@@ -161,17 +162,23 @@ export default function Home() {
             </section>
 
             <section className="projects-section-parent">
-                <div className="projects-section">
-                    <div className="project-card">
-                        <img src={Eckenrode} alt="Project 1" className="project-image" />
-                        <h2>Team Eckenrode</h2>
-                        <p>Team Eckenrode was one of my first ever projects. Used HTML, CSS, and some vanella JavaScript to design and deploy their website.</p>
-                        <a href="https://teameckenrode.com/" target="_blank" rel="noopener noreferrer" className="project-link">View Project</a>
+                <div className="project-card">
+                    <div className="cardspace">
+                        <a href='https://teameckenrode.com/'><img className="project-img" src={EckenrodeViritical} alt="Eckenrode" /></a>
+                        <div className="project-txt">
+                            <h1 className="project-title">Team Eckenrode Gym & Fitness</h1>
+                            <p className="project-description">My first project. Built using HTML, CSS and some vanella JavaScript. </p>
+                            <a href="https://teameckenrode.com/" target="_blank" rel="noreferrer" className="project-link">Visit</a>
+                        </div>
                     </div>
 
-                    {/* Add more project cards as needed */}
-                    {/* <div className="project-card"> ... </div> */}
                 </div>
+
+                <div className="project-card">
+
+
+                </div>
+
             </section>
 
 
