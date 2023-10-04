@@ -163,9 +163,14 @@ export default function Home() {
             <section className="skills-section-parent">
                 <h1 className='skillsh1 hidden'>Skills</h1>
 
+                <div className='boxesdiv'>
+
+                </div>
+
             </section>
 
-
+            <section className="contact-section-parent">
+            </section>
 
         </>
     )

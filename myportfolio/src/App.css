@@ -474,12 +474,13 @@ span {
 }
 
 .skills-section-parent {
-  height: 100vh;
+  min-height: 50vh;
   background-color: var(--sec-color);
+
 }
 
 .skillsh1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--alt-color);
   margin-bottom: 1rem;
   font-weight: bolder;
@@ -488,4 +489,31 @@ span {
   font-family: 'Dancing Script', cursive;
   text-align: center;
   margin-top: 1.5%;
+}
+
+@media screen and (max-width: 800px) {
+  .skillsh1 {
+    font-size: 2.5rem !important;
+  }
+}
+
+.skills-boxes {
+  height: 350px;
+  width: 350px;
+  border: 2px solid var(--alt-color);
+}
+
+.boxesdiv {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+
+.contact-section-parent {
+  height: 50vh;
+  background-color: var(--alt2-color);
 }
