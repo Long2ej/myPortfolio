@@ -1,4 +1,5 @@
 import Profilepic from '../pages/Images/Profilepic.jpg';
+import BasicTabs from './Slider';
 import React, { useEffect } from 'react';
 
 export default function Home() {
@@ -161,11 +162,10 @@ export default function Home() {
             </section>
 
             <section className="skills-section-parent">
-                <h1 className='skillsh1 hidden'>Skills</h1>
+                <h1 className='skillsh1 hidden1'>Skills</h1>
 
-                <div className='boxesdiv'>
+                <BasicTabs />
 
-                </div>
 
             </section>
 

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Playfair Display', serif;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -377,7 +378,7 @@ span {
 
 .profile-pic {
   border-radius: 50%;
-  width: 350px;
+  min-width: 300px;
   height: 400px;
   margin-right: 2rem;
 }
@@ -392,7 +393,7 @@ span {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .about-box {
     flex-direction: column;
     padding: 1rem;
@@ -487,8 +488,8 @@ span {
   text-shadow: 2px 2px var(--pri-color);
   font-family: 'Courgette', cursive;
   font-family: 'Dancing Script', cursive;
-  text-align: center;
-  margin-top: 1.5%;
+  text-align: left;
+  margin: 1.5% 0 0 5%;
 }
 
 @media screen and (max-width: 800px) {
@@ -516,4 +517,6 @@ span {
 .contact-section-parent {
   height: 50vh;
   background-color: var(--alt2-color);
+  display: flex;
+  justify-content: center;
 }
