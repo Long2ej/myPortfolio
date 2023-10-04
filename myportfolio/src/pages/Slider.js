@@ -1,9 +1,10 @@
-import * as React from 'react';
+import React from 'react';
+import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquareJs } from '@fortawesome/free-brands-svg-icons';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
 
 
 
@@ -20,7 +21,7 @@ function CustomTabPanel(props) {
         >
             {value === index && (
                 <Box sx={{ p: 3 }}>
-                    <Typography>{children}</Typography>
+                    {children}
                 </Box>
             )}
         </div>
@@ -54,16 +55,52 @@ export default function BasicTabs() {
                     value={value}
                     onChange={handleChange}
                     aria-label="basic tabs example">
-                    <Tab label="Technical Skills" {...a11yProps(0)} />
-                    <Tab label="Soft Skills" {...a11yProps(1)} />
+                    <Tab
+                        className='tab '
+                        label="Technical Skills"
+                        {...a11yProps(0)}
+
+                    />
+                    <Tab
+                        label="Soft Skills"
+                        {...a11yProps(0)}
+                        className='tab'
+                    />
                 </Tabs>
             </Box>
+
+
             <CustomTabPanel value={value} index={0}>
-                Item One
+                <div className='skills-container'>
+
+
+                    <div className='skills-box'>
+                        <FontAwesomeIcon icon={faSquareJs} size="4x" />
+                        <h1 className='JS'>JavaScript</h1>
+                    </div>
+
+                    <div className='skills-box'>
+                        <FontAwesomeIcon icon={faReact} size="4x" />
+                        <h1 className='React'>React</h1>
+                    </div>
+
+                    <div className='skills-box'>
+                        <FontAwesomeIcon icon={faReact} size="4x" />
+                        <h1 className='React'>React</h1>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
             </CustomTabPanel>
-            <CustomTabPanel value={value} index={1}>
-                Item Two
-            </CustomTabPanel>
+
+
         </Box>
 
     );

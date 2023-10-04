@@ -161,12 +161,8 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="skills-section-parent">
-                <h1 className='skillsh1 hidden1'>Skills</h1>
-
+            <section className="skills-section">
                 <BasicTabs />
-
-
             </section>
 
             <section className="contact-section-parent">

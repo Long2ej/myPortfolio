@@ -3,12 +3,8 @@
   margin: 0;
   padding: 0;
   font-family: 'Playfair Display', serif;
-  overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
 
 ::-webkit-scrollbar-track {
   background: var(--sec-color);
@@ -360,7 +356,7 @@ span {
 }
 
 .about-box::-webkit-scrollbar {
-  width: 6px;
+  width: .5px;
   height: 6px;
 }
 
@@ -378,8 +374,8 @@ span {
 
 .profile-pic {
   border-radius: 50%;
-  min-width: 300px;
-  height: 400px;
+  min-width: 200px;
+  max-height: 400px;
   margin-right: 2rem;
 }
 
@@ -401,7 +397,7 @@ span {
 
   .profile-pic {
     margin: 0 0 1rem 0;
-    width: 225px;
+    width: 200px;
     height: 350px;
   }
 
@@ -474,18 +470,44 @@ span {
   scale: 1.05;
 }
 
-.skills-section-parent {
-  min-height: 50vh;
-  background-color: var(--sec-color);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.skills-section {
+  height: 50vh;
+  width: 100%;
+  background-color: var(--sec-color);
+}
+
+
+
+
+.skills-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  overflow-x: scroll;
 }
 
 .skillsh1 {
-  font-size: 4rem;
+  font-size: 2rem;
   color: var(--alt-color);
   margin-bottom: 1rem;
   font-weight: bolder;
-  text-shadow: 2px 2px var(--pri-color);
+  text-shadow: 1px 1px var(--pri-color);
   font-family: 'Courgette', cursive;
   font-family: 'Dancing Script', cursive;
   text-align: left;
@@ -498,20 +520,45 @@ span {
   }
 }
 
-.skills-boxes {
-  height: 350px;
-  width: 350px;
-  border: 2px solid var(--alt-color);
+@media screen and (min-width: 1000px) {
+  .skills-container {
+    overflow-x: hidden;
+
+  }
 }
 
-.boxesdiv {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  align-items: center;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
+.skills-box {
+  height: 200px;
+  min-width: 200px !important;
+  border: 2px solid var(--alt-color);
+  border-radius: 15px;
+  margin: 1.5% 5% 5% 1.5%;
 }
+
+.JS {
+  padding: 2rem;
+  color: yellow;
+  font-weight: bolder;
+  text-shadow: 1.5px 1.5px black;
+}
+
+.React {
+  color: blue;
+  font-weight: bolder;
+  padding: 2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 .contact-section-parent {
@@ -519,4 +566,6 @@ span {
   background-color: var(--alt2-color);
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
