@@ -1,6 +1,4 @@
 import Profilepic from '../pages/Images/Profilepic.jpg';
-import EckenrodeViritical from '../pages/Images/EckenrodeVirtical.png';
-import EckenrodeHorizontal from '../pages/Images/EckenrodeHorizontal.png';
 import React, { useEffect } from 'react';
 
 export default function Home() {
@@ -128,7 +126,7 @@ export default function Home() {
                     <div className="Welcometxt">
                         <h1>Evan Long</h1>
                     </div>
-                    <div className='HSAbox'>
+                    <div className='HSAbox hidden'>
                         <p className='hsatxt'>B.S. Healthservices Administration</p>
                     </div>
                     <div className='skillsbox'>
@@ -147,40 +145,25 @@ export default function Home() {
 
             <section className="about-section-parent">
                 <div className="about-section">
-                    <h1 className="about-me-title hidden1">About Me</h1>
-                    <div className="about-box hidden">
+                    <h1 className="about-me-title hidden">About Me</h1>
+                    <div className="about-box hidden1">
                         <img className="profile-pic" src={Profilepic} alt="Profile" />
                         <p>
-                            Currently a senior at James Madison University, I'm pursuing a major in Healthcare Administration complemented by a minor in General Business.
+                            Currently a senior at James Madison University, I am pursuing a major in Healthcare Administration complemented by a minor in General Business.
                             My academic foundation has given me a thorough understanding of healthcare systems, but my true passion lies in the realms of entrepreneurship, startups, and technology.
                             In addition to my formal education, I've dedicated time to teach myself coding, seeking ways to integrate this skill with healthcare innovation.
-                            I'm actively looking for opportunities to blend my healthcare background with the dynamic world of tech and startups.
+                            I am actively looking for opportunities to blend my healthcare background with the dynamic world of tech and startups.
                             I welcome connections with professionals who share a similar vision.
                         </p>
                     </div>
+
                 </div>
             </section>
 
-            <section className="projects-section-parent">
-                <div className="project-card">
-                    <div className="cardspace">
-                        <a href='https://teameckenrode.com/'><img className="project-img" src={EckenrodeViritical} alt="Eckenrode" /></a>
-                        <div className="project-txt">
-                            <h1 className="project-title">Team Eckenrode Gym & Fitness</h1>
-                            <p className="project-description">My first project. Built using HTML, CSS and some vanella JavaScript. </p>
-                            <a href="https://teameckenrode.com/" target="_blank" rel="noreferrer" className="project-link">Visit</a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div className="project-card">
-
-
-                </div>
+            <section className="skills-section-parent">
+                <h1 className='skillsh1 hidden'>Skills</h1>
 
             </section>
-
 
 
 
