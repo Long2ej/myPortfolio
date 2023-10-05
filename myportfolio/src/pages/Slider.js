@@ -5,6 +5,10 @@ import Tab from '@mui/material/Tab';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
+import { faCss3Alt } from '@fortawesome/free-brands-svg-icons';
+import { faGitAlt } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 
@@ -73,30 +77,44 @@ export default function BasicTabs() {
             <CustomTabPanel value={value} index={0}>
                 <div className='skills-container'>
 
-
                     <div className='skills-box'>
                         <FontAwesomeIcon icon={faSquareJs} size="4x" />
-                        <h1 className='JS'>JavaScript</h1>
+                        <h1 className='txt'>JavaScript</h1>
                     </div>
 
                     <div className='skills-box'>
                         <FontAwesomeIcon icon={faReact} size="4x" />
-                        <h1 className='React'>React</h1>
+                        <h1 className='txt'>React</h1>
                     </div>
 
                     <div className='skills-box'>
-                        <FontAwesomeIcon icon={faReact} size="4x" />
-                        <h1 className='React'>React</h1>
+                        <FontAwesomeIcon icon={faHtml5} size="4x" />
+                        <h1 className='txt'>HTML</h1>
                     </div>
 
+                    <div className='skills-box'>
+                        <FontAwesomeIcon icon={faCss3Alt} size="4x" />
+                        <h1 className='txt'>CSS</h1>
+                    </div>
 
+                    <div className='skills-box'>
+                        <FontAwesomeIcon icon={faGitAlt} size="4x" />
+                        <h1 className='txt'>GIT</h1>
+                    </div>
 
-
-
-
-
+                    <div className='skills-box'>
+                        <FontAwesomeIcon icon={faGithub} size="4x" />
+                        <h1 className='txt'>GitHub</h1>
+                    </div>
 
                 </div>
+
+            </CustomTabPanel>
+
+
+
+
+            <CustomTabPanel value={value} index={1}>
 
             </CustomTabPanel>
 

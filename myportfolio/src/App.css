@@ -351,26 +351,10 @@ span {
   background-color: var(--sec-color);
   max-height: 75vh;
   width: 100%;
-  overflow-y: scroll;
   overflow-x: hidden;
 }
 
-.about-box::-webkit-scrollbar {
-  width: .5px;
-  height: 6px;
-}
 
-.about-box::-webkit-scrollbar-track {
-  background: var(--sec-color);
-  border-radius: 10px;
-  margin: 10px 0;
-}
-
-.about-box::-webkit-scrollbar-thumb {
-  background: var(--alt-color);
-  border-radius: 10px;
-  margin: 10px 0;
-}
 
 .profile-pic {
   border-radius: 50%;
@@ -393,12 +377,14 @@ span {
   .about-box {
     flex-direction: column;
     padding: 1rem;
+    overflow-y: scroll;
+
   }
 
   .profile-pic {
     margin: 0 0 1rem 0;
     width: 200px;
-    height: 350px;
+    max-height: 250px !important;
   }
 
   .about-box p {
@@ -499,28 +485,11 @@ span {
   display: flex;
   flex-wrap: nowrap;
   justify-content: start;
+  align-items: center;
   overflow-x: scroll;
 }
 
-.skillsh1 {
-  font-size: 2rem;
-  color: var(--alt-color);
-  margin-bottom: 1rem;
-  font-weight: bolder;
-  text-shadow: 1px 1px var(--pri-color);
-  font-family: 'Courgette', cursive;
-  font-family: 'Dancing Script', cursive;
-  text-align: left;
-  margin: 1.5% 0 0 5%;
-}
-
-@media screen and (max-width: 800px) {
-  .skillsh1 {
-    font-size: 2.5rem !important;
-  }
-}
-
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1025px) {
   .skills-container {
     overflow-x: hidden;
 
@@ -530,26 +499,20 @@ span {
 .skills-box {
   height: 200px;
   min-width: 200px !important;
-  border: 2px solid var(--alt-color);
   border-radius: 15px;
-  margin: 1.5% 5% 5% 1.5%;
+  margin: 1.5% 2% 5% 1.5%;
+  background-color: var(--alt-color);
+  padding: 1rem;
 }
 
-.JS {
+
+
+.txt {
   padding: 2rem;
-  color: yellow;
+  color: var(--alt2-color);
   font-weight: bolder;
-  text-shadow: 1.5px 1.5px black;
+  text-shadow: 1.5px 1.5px var(--pri-color);
 }
-
-.React {
-  color: blue;
-  font-weight: bolder;
-  padding: 2rem;
-
-}
-
-
 
 
 
