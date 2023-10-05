@@ -2,6 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import CircularProgressWithLabel from './ProgressBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareJs } from '@fortawesome/free-brands-svg-icons';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
@@ -105,6 +106,7 @@ export default function BasicTabs() {
                     <div className='skills-box'>
                         <FontAwesomeIcon icon={faGithub} size="4x" />
                         <h1 className='txt'>GitHub</h1>
+
                     </div>
 
                 </div>
@@ -115,7 +117,20 @@ export default function BasicTabs() {
 
 
             <CustomTabPanel value={value} index={1}>
+                <div className='skills-container'>
 
+                    <div className='skills-box'>
+                        <CircularProgressWithLabel value={90} />
+                        <h1 className='txt'>Presentations</h1>
+                    </div>
+
+                    <div className='skills-box'>
+                        <CircularProgressWithLabel value={75} />
+                        <h1 className='txt'>Communication</h1>
+                    </div>
+
+
+                </div>
             </CustomTabPanel>
 
 
