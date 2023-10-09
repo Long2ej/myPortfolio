@@ -42,7 +42,7 @@ export default function Home() {
             scrolledOnce = true;
             stickyScroll = true;
 
-            let scrollToPosition = window.innerHeight * 1.00 + window.scrollY;
+            let scrollToPosition = window.innerHeight * .925 + window.scrollY;
             window.scrollTo({
                 top: scrollToPosition,
                 behavior: 'smooth'
@@ -130,9 +130,7 @@ export default function Home() {
                     <div className='HSAbox hidden'>
                         <p className='hsatxt'>B.S. Healthservices Administration</p>
                     </div>
-                    <div className='skillsbox'>
-                        <p className='skillstxt'>HTML--CSS--JavaScript--React--GIT--GitHub</p>
-                    </div>
+
 
                 </div>
 
@@ -146,8 +144,8 @@ export default function Home() {
 
             <section className="about-section-parent">
                 <div className="about-section">
-                    <h1 className="about-me-title hidden">About Me</h1>
-                    <div className="about-box hidden1">
+                    <h1 className="about-me-title hidden1">About Me</h1>
+                    <div className="about-box hidden">
                         <img className="profile-pic" src={Profilepic} alt="Profile" />
                         <p>
                             Currently a senior at James Madison University, I am pursuing a major in Healthcare Administration complemented by a minor in General Business.

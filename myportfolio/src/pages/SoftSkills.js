@@ -33,7 +33,6 @@ function Softskills() {
 
     return (
         <Container ref={skillsRef}>
-            <h2>My Skills</h2>
             {skills.map((skill, index) => (
                 <Row key={index} className="mb-3">
                     <Col md={2}>
