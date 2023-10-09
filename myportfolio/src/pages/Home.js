@@ -1,5 +1,5 @@
 import Profilepic from '../pages/Images/Profilepic.jpg';
-import BasicTabs from './Slider';
+import BasicTabs from './SkillsTab';
 import React, { useEffect } from 'react';
 
 export default function Home() {
@@ -166,6 +166,10 @@ export default function Home() {
             </section>
 
             <section className="contact-section-parent">
+                <div className='hidden1'>
+                    <h1 className='contacth1'>Contact:</h1>
+                    <h2>Please feel free to email me: Long2ej@dukes.jmu.edu</h2>
+                </div>
             </section>
 
         </>
