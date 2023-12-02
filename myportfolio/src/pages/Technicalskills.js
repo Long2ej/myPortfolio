@@ -7,11 +7,14 @@ import Col from 'react-bootstrap/Col';
 function SkillsSection() {
     const skills = [
         { name: 'Healthcare Systems', proficiency: 99 },
+        { name: 'Git', proficiency: 99 },
+        { name: 'GitHub', proficiency: 90 },
         { name: 'HTML/CSS', proficiency: 90 },
-        { name: 'JavaScript', proficiency: 60 },
-        { name: 'React', proficiency: 50 },
-        { name: 'Git', proficiency: 70 },
-        { name: 'GitHub', proficiency: 75 }
+        { name: 'MySQL', proficiency: 75 },
+        { name: 'Node JS', proficiency: 65 },
+        { name: 'Express JS', proficiency: 65 },
+        { name: 'React', proficiency: 55 },
+        { name: 'JavaScript', proficiency: 45 },
     ];
 
     const skillsRef = useRef(null);
