@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5d03df85.css",
+    "main.js": "/static/js/main.b79e91d0.js",
+    "static/js/787.1f11dfe9.chunk.js": "/static/js/787.1f11dfe9.chunk.js",
+    "static/media/EckenrodeVirtical.png": "/static/media/EckenrodeVirtical.e3828d742f4d8dd0b5fe.png",
+    "static/media/Profilepic.jpg": "/static/media/Profilepic.51558dd893a119ee9900.jpg",
+    "static/media/TFL.png": "/static/media/TFL.4e4de91ef9ce95e0d8e2.png",
+    "index.html": "/index.html",
+    "main.5d03df85.css.map": "/static/css/main.5d03df85.css.map",
+    "main.b79e91d0.js.map": "/static/js/main.b79e91d0.js.map",
+    "787.1f11dfe9.chunk.js.map": "/static/js/787.1f11dfe9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d03df85.css",
+    "static/js/main.b79e91d0.js"
+  ]
+}
